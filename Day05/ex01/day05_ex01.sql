@@ -1,0 +1,4 @@
+SET enable_seqscan =OFF;
+EXPLAIN ANALYZE 
+SELECT m.pizza_name, pz.name  pizzeria_name
+FROM menu m JOIN pizzeria pz ON m.pizzeria_id = pz.id;
